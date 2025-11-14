@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "dc8beab7-fc80-45e1-9c5b-640fd322f172",
+		"name": "QA TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "50037000",
+		"_collection_link": "https://mariamuravchik205633-alt-2607435.postman.co/workspace/d202fe7c-8625-4600-83bd-ecc58e981616/collection/50037000-dc8beab7-fc80-45e1-9c5b-640fd322f172?action=share&source=collection_link&creator=50037000"
+	},
+	"item": [
+		{
+			"name": "Collections",
+			"item": [
+				{
+					"name": "GET Collection",
+					"item": [
+						{
+							"name": "Post #99",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{base_url}}/posts/99"
+							},
+							"response": []
+						},
+						{
+							"name": "Get authenticated user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{base_url}}/posts/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POST Collection",
+					"item": [
+						{
+							"name": "Post new user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/posts?title=QA Students&body=Postman training&userId=1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"posts"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "QA Students"
+										},
+										{
+											"key": "body",
+											"value": "Postman training"
+										},
+										{
+											"key": "userId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE Collection",
+					"item": [
+						{
+							"name": "Delete Post",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{base_url}}/posts/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT Collection",
+					"item": [
+						{
+							"name": "Edit title",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/posts/1?title=New",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"posts",
+										"1"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "New"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "OPTIONS Collection",
+					"item": [
+						{
+							"name": "Get options",
+							"request": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": "{{base_url}}"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
